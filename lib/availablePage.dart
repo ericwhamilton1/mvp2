@@ -21,8 +21,8 @@ class _AvailablepageState extends State<Availablepage> {
 
   }
   void loadCSV() async{
-    final raw_data = await rootBundle.loadString("assets/users.csv");
-    List<List<dynamic>> listdata = const CsvToListConverter().convert(raw_data);
+    final rawData = await rootBundle.loadString("assets/users.csv");
+    List<List<dynamic>> listdata = const CsvToListConverter().convert(rawData);
     setState(() {
       data = listdata;
     });

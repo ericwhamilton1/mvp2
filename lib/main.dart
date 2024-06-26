@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
         useMaterial3: true,
       ),
-      home: MyHomePage(),
+      home: const MyHomePage(),
     );
   }
 }
@@ -46,9 +46,9 @@ class _MyHomePageState extends State<MyHomePage> {
     Widget page;
       switch (selectedIndex) {
         case 0:
-          page = Availablepage();
+          page = const Availablepage();
         case 1:
-          page = Walkingpage();
+          page = const Walkingpage();
         default:
           throw UnimplementedError('no widget for $selectedIndex');
       }
